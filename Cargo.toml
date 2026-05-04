@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "openfst-rs",
+    "openfst-rs-macros",
+]
+resolver = "3"

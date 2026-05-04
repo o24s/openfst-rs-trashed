@@ -1,0 +1,6 @@
+[submodule "vendor/abseil-cpp"]
+	path = openfst-rs/vendor/abseil-cpp
+	url = https://github.com/abseil/abseil-cpp.git
+[submodule "vendor/openfst"]
+	path = openfst-rs/vendor/openfst
+	url = https://github.com/google-research/openfst.git

@@ -1,0 +1,29 @@
+[package]
+name = "openfst-rs"
+version = "0.1.0"
+edition = "2024"
+build = "build.rs"
+
+[features]
+default = ["cache-deps"]
+cache-deps = []
+
+[dependencies]
+cxx = { version = "1.0.194", features = ["c++17"] }
+openfst-rs-macros = { path = "../openfst-rs-macros" }
+pastey = "0.2.2"
+
+[dev-dependencies]
+criterion = "0.8.2"
+tempfile = "3.27.0"
+rustfst = "1.3.1"
+
+[build-dependencies]
+cc = "1.2.61"
+cxx-build = "1.0.194"
+ignore = "0.4.25"
+regex = "1.12.3"
+
+[[bench]]
+name = "fst_benchmark"
+harness = false
